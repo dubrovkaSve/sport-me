@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -18,7 +17,7 @@ import java.util.UUID;
 @RequestMapping(value = "/programs") //every query to path /programs* will be passed here
 public class ProgramController {
 
-    @Value("classpath:static/db.json")
+    @Value("classpath:static/programs.json")
     private Resource db;
 
     @GetMapping(
